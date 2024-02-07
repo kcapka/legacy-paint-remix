@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+    max-width: 100svw;
+}
+
+
+
+.home-page-bg {
+    background-image: url("/images/background-landing.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* site padding */
+
+@layer utilities {
+    .default-px {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    @screen md {
+      .default-px {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  
+    @screen lg {
+      .default-px {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+    }
+  }
+
+  /* underline animation */
+
+  .link-with-underline {
+    position: relative;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .link-with-underline:hover {
+    color: black;
+  }
+  
+  .link-with-underline::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .link-with-underline:hover::before {
+    transform: scaleX(1);
+  }
