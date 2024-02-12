@@ -8,8 +8,6 @@
 
 body {
     font-family: "Lato", sans-serif;
-    overflow-x: hidden;
-    max-width: 100svw;
 }
 
 
@@ -76,4 +74,11 @@ body {
   
   .link-with-underline:hover::before {
     transform: scaleX(1);
+  }
+
+  /*backdrop blur for compatibility's sake*/
+
+  .custom-blur{
+    -webkit-backdrop-filter: blur(10px); /*fixes blur for Safari*/
+    backdrop-filter: blur(10px); 
   }
