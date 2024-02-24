@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <>
-            <nav className="default-px h-20 md:h-20 flex items-center justify-between bg-[rgba(214,214,214,1)] shadow-md fixed w-[100vw] z-20">
+            <nav className={`default-px h-20 md:h-20 flex items-center justify-between ${isActive ? "bg-black" : "bg-[rgba(214,214,214,1)]"} shadow-md fixed w-[100vw] z-20 duration-300`}>
                 <Link to="/">
                     <img src="/images/legacy-logo.svg" alt="Legacy Painting Logo" className="cursor-pointer md:w-[150px] w-[120px]"/>     
                 </Link>
@@ -40,13 +40,13 @@ export default function Header() {
                         <img src="/images/x-logo.svg" alt="X Logo" className="cursor-pointer"/>
                         <a href="https://www.linkedin.com/in/stephen-soriano-3722a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="/images/linkedin-logo.svg" alt="LinkedIn Logo" className="cursor-pointer"/></a>
                     </div>
-                    <div className="flex items-center flex-col justify-center md:hidden w-[32px] h-[32px] [&_span]:duration-300 cursor-pointer" onClick={handleToggle}>
-                        <span className={`${isActive===true ? "rotate-45 translate-y-[10px]": "" } h-[2px] w-[30px] bg-black m-1`}></span>
-                        <span className={`${isActive===true ? "opacity-0 w-[0px]" : "w-[30px]"} h-[2px] bg-black m-1`}></span>
-                        <span className={`${isActive===true ? "rotate-[-45deg] translate-y-[-10px]" : ""} h-[2px] w-[30px] bg-black m-1`}></span>
+                    <div className={`${isActive ? "[&_span]:bg-white" : "[&_span]:bg-black"} flex items-center flex-col justify-center md:hidden w-[32px] h-[32px] [&_span]:duration-300 cursor-pointer`} onClick={handleToggle}>
+                        <span className={`${isActive===true ? "rotate-45 translate-y-[10px]": "" } h-[2px] w-[30px] m-1`}></span>
+                        <span className={`${isActive===true ? "opacity-0 w-[0px]" : "w-[30px]"} h-[2px] m-1`}></span>
+                        <span className={`${isActive===true ? "rotate-[-45deg] translate-y-[-10px]" : ""} h-[2px] w-[30px] m-1`}></span>
                     </div>
             </nav>
-            <section className={`block md:hidden ${isActive ? "top-0" : "top-[-120%]"} fixed h-[100svh] bg-[#a8a6a2] text-white w-full text-center left-0 duration-100 shadow-md z-10 mt-20`}>
+            <section className={`block md:hidden ${isActive ? "top-0" : "top-[-120%]"} fixed h-[100svh] bg-black text-white w-full text-center left-0 duration-100 shadow-md z-10 mt-20`}>
                     <ul className="[&_li]:pt-5 [&_li]:cursor-pointer text-xl pt-16 [&_li]:border-b [&_li]:pb-5 [&_li]:duration-200">
                         <Link to="/">
                             <li onClick={handleToggle} className="border-t hover:bg-[#888683]">Home</li>

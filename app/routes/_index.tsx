@@ -1,10 +1,12 @@
 import type { MetaFunction } from "@remix-run/node";
 import {Link} from "@remix-run/react";
+import { motion } from "framer-motion";
+import StaggerText from "~/components/animations/StaggerText";
+import HeroFadeIn from "~/components/animations/HeroFadeIn";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Legacy Painting" },
   ];
 };
 
@@ -12,22 +14,36 @@ export default function Index() {
   return (
     <div className="min-h-[100svh]">
       <section className="home-page-bg h-[100svh] flex items-center justify-center pt-20 default-px">
+        <HeroFadeIn>
         <div className="custom-blur inline-block p-5 md:p-8 shadow-xl max-w-[700px]">
           <h1 className="text-4xl md:text-6xl drop-shadow mb-2 md:mb-5">Professional home and business painting services.</h1>
           <h2 className="text-2xl mb-4 md:mb-7">Find out why we are a top rated San Diego business.</h2>
           <div className="flex justify-center">
             <Link to="/services">
-              <button className="p-5 bg-[#a8a6a2] text-white md:text-xl hover:bg-[#888683] duration-300">Our Services</button>
+              <button className="p-5 bg-[#a8a6a2] text-white md:text-xl hover:bg-[#888683] duration-300 shadow-inner">Our Services</button>
             </Link>
           </div>
         </div>
+        </HeroFadeIn>
       </section>
       <section className="flex flex-col md:flex-row bg-[#383838] text-white default-px py-20">
         <div className="mb-10 md:mb-0 flex-1 md:pr-32">
-          <p className="text-lg md:text-xl">Our new COVID safe solution to painting. Get in touch with us to learn more about our contactless quotes & pricing. You will just need to answer a few questions on a call and send us photos to get an accurate estimate. Get in touch for the fastest way to get your quote! *Serving the greater San Diego area.</p>
+          <motion.p className="text-lg md:text-xl" 
+          initial={{
+            opacity: 0
+          }}
+          whileInView={{
+            opacity: 1
+          }}
+          transition={{
+            duration: 2
+          }}
+          viewport={{
+            once: true
+          }}>Our new COVID safe solution to painting. Get in touch with us to learn more about our contactless quotes & pricing. You will just need to answer a few questions on a call and send us photos to get an accurate estimate. Get in touch for the fastest way to get your quote! *Serving the greater San Diego area.</motion.p>
         </div>
         <div className="flex-1 md:pr-32">
-          <h1 className="mb-5 text-2xl md:text-4xl text-center md:text-start md:mb-10">Text or call us for a free contactless quote today.</h1>
+          <h1 className="mb-5 text-2xl md:text-4xl text-center md:text-start md:mb-10"><StaggerText>Text or call us for a free contactless quote today.</StaggerText></h1>
           <div className="flex justify-center md:justify-start">
             <p className="p-5 bg-[#a8a6a2] text-white md:text-xl hover:bg-[#888683] duration-300 inline-block cursor-pointer">Schedule Contactless Quote</p>
           </div>
