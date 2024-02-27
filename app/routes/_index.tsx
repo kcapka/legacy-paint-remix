@@ -85,7 +85,7 @@ export default function Index() {
         <motion.div className="flex-1 opacity-0 translate-y-20" variants={item}>
           <img src="/images/hp-img3.png" alt="Plant in front of green wall" />
           <h1>Commercial Painting</h1>
-          <p>When it comes to moving your business to a new office that needs a face lift all the way to Hotel renovations we can do it all here at Legacy Painting.<br></br><br></br>We have 10+ years experience on commercial projects. There is no job to big or to small here at Legacy. Find out why we are a top-rated San Diego painting company!Hello</p>
+          <p>When it comes to moving your business to a new office that needs a face lift all the way to Hotel renovations we can do it all here at Legacy Painting.<br></br><br></br>We have 10+ years experience on commercial projects. There is no job to big or to small here at Legacy. Find out why we are a top-rated San Diego painting company!</p>
         </motion.div>
       </motion.section>
     </div>
