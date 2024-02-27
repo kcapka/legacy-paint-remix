@@ -3,15 +3,14 @@ import { motion } from 'framer-motion';
 
 const fadeInAnimationVariants = {
     initial: {
-        x: '-100%'
-        
+        //x: '-100%',
+        scale: 0
     },
     animate: {
-        x: 0,
-        
+        //x: 0,
+        scale: 1,
         transition: {
-            type: 'spring',
-            stiffness: 90,
+            type: 'spring'
         }
     }
 }
