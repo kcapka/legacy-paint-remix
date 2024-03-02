@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <>
-            <nav className={`default-px h-20 md:h-20 flex items-center justify-between ${isActive ? "bg-black" : "bg-[rgba(214,214,214,1)]"} shadow-md fixed w-[100vw] z-20 duration-300`}>
+            <nav className={`default-px h-20 md:h-20 flex items-center justify-between ${isActive ? "bg-black" : "bg-light"} shadow-md fixed w-[100vw] z-20 duration-300`}>
                 <Link to="/">
                     <img src="/images/legacy-logo.svg" alt="Legacy Painting Logo" className="cursor-pointer md:w-[150px] w-[120px]"/>     
                 </Link>
