@@ -31,7 +31,7 @@ export default function Header() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, [prevScrollPos]);
 
-    if (!visible) {
+    if (!visible && !isActive) {
         top = 'top-[-100px]';
     } else {
         top = 'top-0';
@@ -41,7 +41,7 @@ export default function Header() {
         <>
             <nav className={`default-px h-24 md:h-26 flex items-center justify-between ${isActive ? "bg-black" : "bg-light"} shadow-md fixed ${top} w-[100vw] z-20 duration-300`}>
                 <Link to="/">
-                    <img src="/images/legacy-logo.svg" alt="Legacy Painting Logo" className="cursor-pointer md:w-[150px] w-[200px]"/>     
+                    <img src="/images/Legacy-Painting-Logo.png" alt="Legacy Painting Logo" className="cursor-pointer md:w-[150px] w-[200px]"/>     
                 </Link>
                     <ul className="hidden md:flex items-center justify-between  [&_li]:lg:mr-7 [&_li]:md:mr-3 [&_li]:cursor-pointer md:text-lg">
                         <Link to="/services">
