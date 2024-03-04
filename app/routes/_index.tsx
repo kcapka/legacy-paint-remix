@@ -207,7 +207,7 @@ export default function Index() {
               San Diego, Solana Beach, Del Mar, Poway, Chula Vista, La Mesa,
               Encinitas, Carlsbad, San Marcos, Oceanside & Vista
             </strong>
-            .{" "}
+            .
           </p>
         </motion.div>
       </section>
