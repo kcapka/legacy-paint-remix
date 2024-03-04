@@ -5,7 +5,7 @@ export default {
     
     extend: {
       colors: {
-        'light': 'rgba(214,214,214,1)',
+        'light': 'rgb(255,255,255)',
         'dark': '#383838',
         'button': '#a8a6a2'
       }

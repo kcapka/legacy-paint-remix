@@ -33,8 +33,8 @@ body {
     }
 
     .default-py {
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding-top: 75px;
+      padding-bottom: 75px;
     }
   
     @screen md {
@@ -44,8 +44,8 @@ body {
       }
 
       .default-py {
-        padding-top: 80px;
-        padding-bottom: 80px; 
+        padding-top: 100px;
+        padding-bottom: 100px; 
       }
     }
   
@@ -91,4 +91,12 @@ body {
   .custom-blur{
     -webkit-backdrop-filter: blur(10px); /*fixes blur for Safari*/
     backdrop-filter: blur(10px); 
+  }
+
+  /*White roller background*/
+
+  .roller-bg{
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/images/roller-white.webp');
+    background-position: center;
+    background-size: cover;
   }

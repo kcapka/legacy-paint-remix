@@ -1,7 +1,8 @@
 import { Link } from "@remix-run/react";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 export default function Header() {
+    /* for mobile */
     const [isActive, setIsActive] = useState(false);
 
 
@@ -13,13 +14,36 @@ export default function Header() {
         }
     };
 
+    /* for desktop */
+    const [prevScrollPos, setPrevScrollPos] = useState(0);
+    const [visible, setVisible] = useState(true);
+    let top;
+
+    useEffect(() => {
+        const handleScroll = () => {
+        const currentScrollPos = window.scrollY;
+        setVisible((prevScrollPos > currentScrollPos) || currentScrollPos === 0);
+        setPrevScrollPos(currentScrollPos);
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [prevScrollPos]);
+
+    if (!visible) {
+        top = 'top-[-100px]';
+    } else {
+        top = 'top-0';
+    }
+
     return (
         <>
-            <nav className={`default-px h-20 md:h-20 flex items-center justify-between ${isActive ? "bg-black" : "bg-light"} shadow-md fixed w-[100vw] z-20 duration-300`}>
+            <nav className={`default-px h-24 md:h-26 flex items-center justify-between ${isActive ? "bg-black" : "bg-light"} shadow-md fixed ${top} w-[100vw] z-20 duration-300`}>
                 <Link to="/">
-                    <img src="/images/legacy-logo.svg" alt="Legacy Painting Logo" className="cursor-pointer md:w-[150px] w-[120px]"/>     
+                    <img src="/images/legacy-logo.svg" alt="Legacy Painting Logo" className="cursor-pointer md:w-[150px] w-[200px]"/>     
                 </Link>
-                    <ul className="hidden md:flex items-center justify-between  [&_li]:lg:mr-7 [&_li]:md:mr-3 [&_li]:cursor-pointer md:text-lg lg:text-xl">
+                    <ul className="hidden md:flex items-center justify-between  [&_li]:lg:mr-7 [&_li]:md:mr-3 [&_li]:cursor-pointer md:text-lg">
                         <Link to="/services">
                             <li className="link-with-underline">Our Services</li>
                         </Link>
