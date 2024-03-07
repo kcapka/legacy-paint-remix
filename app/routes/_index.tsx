@@ -16,7 +16,7 @@ export default function Index() {
       opacity: 1,
       transition: {
         staggerChildren: 0.4,
-        delayChildren: 1,
+        //delayChildren: 1,
       },
     },
   };
