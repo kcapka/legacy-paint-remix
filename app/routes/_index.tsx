@@ -16,6 +16,7 @@ export default function Index() {
       opacity: 1,
       transition: {
         staggerChildren: 0.4,
+        delayChildren: 1,
       },
     },
   };
@@ -37,7 +38,7 @@ export default function Index() {
       <section className="home-page-bg h-[100svh] flex items-center justify-center pt-20 default-px">
         <HeroFadeIn>
           <div className="custom-blur inline-block p-5 md:p-8 shadow-xl max-w-[700px]">
-            <h1 className="text-4xl md:text-6xl drop-shadow mb-2 md:mb-5">
+            <h1 className="text-4xl md:text-6xl mb-2 md:mb-5">
               Professional home and business painting services.
             </h1>
             <h2 className="text-2xl mb-4 md:mb-7">
@@ -167,7 +168,7 @@ export default function Index() {
         </div>
       </motion.section>
 
-      <section className="default-px default-py bg-dark text-white flex flex-col md:flex-row justify-start md:justify-between items-center">
+      <section className="default-px py-[150px] bg-dark text-white flex flex-col md:flex-row justify-start md:justify-between items-center">
         <motion.h1 className="flex-1 text-4xl md:mr-20 mb-10 md:mb-0"
         initial={{
           opacity: 0,
@@ -210,29 +211,6 @@ export default function Index() {
             .
           </p>
         </motion.div>
-      </section>
-
-      <section className="roller-bg py-[150px] default-px flex flex-col items-center">
-        <motion.h1 className="text-4xl text-center mb-10 text-white"
-        initial={{
-          opacity: 0,
-          y: 100
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0
-        }}
-        transition={{
-          duration: 1
-        }}
-        viewport={{
-          once: true
-        }}>
-          Get your painting project started today.
-        </motion.h1>
-        <Link to="/contact">
-          <Button>Get A Quote</Button>
-        </Link>
       </section>
     </div>
   );
