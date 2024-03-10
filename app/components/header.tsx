@@ -78,10 +78,18 @@ export default function Header() {
                         <Link to="/services">
                             <li onClick={handleToggle} className="hover:bg-[#888683]">Our Services</li>
                         </Link>
-                        <li onClick={handleToggle} className="hover:bg-[#888683]">Portfolio</li>
-                        <li onClick={handleToggle} className="hover:bg-[#888683]">Reviews</li>
-                        <li onClick={handleToggle} className="hover:bg-[#888683]">About</li>
-                        <li onClick={handleToggle} className="hover:bg-[#888683]">Contact</li>
+                        <Link to="/portfolio">
+                            <li onClick={handleToggle} className="hover:bg-[#888683]">Portfolio</li>
+                        </Link>
+                        <Link to="reviews">
+                            <li onClick={handleToggle} className="hover:bg-[#888683]">Reviews</li>
+                        </Link>
+                        <Link to="about">
+                            <li onClick={handleToggle} className="hover:bg-[#888683]">About</li>
+                        </Link>
+                        <Link to="contact">
+                            <li onClick={handleToggle} className="hover:bg-[#888683]">Contact</li>
+                        </Link>
                     </ul>
                     <div className="flex justify-center mt-10">
                         <img src="/images/x-logo.svg" alt="X Logo" className="cursor-pointer mr-5"/>

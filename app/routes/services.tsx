@@ -11,7 +11,7 @@ export default function Services() {
           <StaggerText>Our Services</StaggerText>
         </h1>
         <motion.p
-          className="text-xl md:text-2xl text-white"
+          className="text-xl md:text-2xl text-white md:font-thin"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 1 }}
