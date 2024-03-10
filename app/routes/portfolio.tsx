@@ -126,8 +126,8 @@ export default function Portfolio() {
                         initial={{scale: 1, opacity: 0}}
                         whileInView={{opacity: 1}}
                         viewport={{once: true}}
-                        transition={{duration: 1}}
-                        whileHover={{scale: 1.02}} />
+                        transition={{opacity: {duration: 1}}}
+                        whileHover={{scale: 1.05}} />
                     ))}
                 </div>
             </section>
