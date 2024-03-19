@@ -74,6 +74,12 @@ html{
     }
   }
 
+  /* content max-width */
+
+  .content-max {
+    max-width: 1200px;
+  }
+
   /* underline animation */
 
   .link-with-underline {
