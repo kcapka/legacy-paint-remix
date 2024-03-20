@@ -54,7 +54,7 @@ export default function Index() {
       </section>
 
       <section className="bg-dark text-white default-py default-px flex justify-center">
-        <div className="flex flex-col md:flex-row content-max">
+        <div className="flex flex-col md:flex-row">
           <div className="mb-10 md:mb-0 flex-1 md:pr-32">
             <motion.p
               className="text-lg md:text-xl"
@@ -100,7 +100,7 @@ export default function Index() {
         whileInView="show"
         viewport={{ once: true }}
       >
-        <div className="content-max">
+        <div>
           <h1 className="text-4xl mb-8 md:mb-12">Our Services</h1>
           <div className="[&_div]:md:pr-5 [&_div]:mb-16 [&_div]:md:mb-0 [&_div]:max-w-[400px] flex flex-col items-center md:items-start md:flex-row md:justify-between [&_h1]:text-xl [&_img]:mb-5 [&_h1]:mb-3 [&_img]:mx-auto [&_h1]:font-bold [&_h1]:px-2 [&_p]:px-2 [&_p]:text-base [&_p]:md:text-lg mb-0 md:mb-20">
             <motion.div
@@ -173,7 +173,7 @@ export default function Index() {
       </motion.section>
 
       <section className="default-px py-[150px] bg-dark text-white flex justify-center">
-        <div className="content-max flex flex-col md:flex-row justify-start md:justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-start md:justify-between items-center">
           <motion.h1 className="flex-1 text-4xl md:mr-20 mb-10 md:mb-0"
           initial={{
             opacity: 0,

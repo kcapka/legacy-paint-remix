@@ -72,6 +72,13 @@ html{
         padding-right: 60px;
       }
     }
+
+    @screen 2xl {
+      .default-px {
+        padding-left: 300px;
+        padding-right: 300px;
+      }
+    }
   }
 
   /* content max-width */
