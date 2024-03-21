@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import Button from './Button';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
+import { SpinnerRoundFilled } from 'spinners-react';
 
 export default function ContactForm() {
 
@@ -115,15 +116,23 @@ export default function ContactForm() {
             {submitted && (
                 <section 
                 className='fixed top-0 left-0 w-[100svw] h-[100svh] flex justify-center items-center'>
-                    <motion.div className='flex justify-center items-center bg-white border text-2xl rounded w-[350px] h-[100px] shadow-lg'
+                    <motion.div className='flex justify-center items-center bg-white border text-2xl rounded w-[350px] min-h-[100px] shadow-lg p-10'
                     initial={{x: '-200%', opacity: 0}}
                     animate={{x: 0, opacity: 1}}>
-                        <img src="images/icons/x-solid-black.svg" alt="Close" className='absolute top-2 right-2 w-4 cursor-pointer' onClick={handleExit} />
+                        <img src="images/icons/x-solid-black.svg" alt="Close" className='absolute top-5 right-5 w-4 cursor-pointer' onClick={handleExit} />
                         {loading && (
-                            <p>Sending...</p>
+                            <div className='flex flex-col justify-center items-center'>
+                                <p className='mb-2'>Sending...</p>
+                                <SpinnerRoundFilled color="#383838" />
+                            </div>
                         )}
                         {success && (
-                            <p>Sent!</p>
+                            <div className='flex flex-col justify-center items-center'>
+                                <p className='mb-2'>Sent!</p>
+                                <motion.img src='images/icons/check-solid.svg' alt="check mark" className='w-[40px]'
+                                initial={{opacity: 0}} animate={{opacity: 1}} />
+                            </div>
+                            
                         )}
                         {error && (
                             <p>Uh oh, something went wrong! Try again.</p>
