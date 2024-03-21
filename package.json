@@ -21,7 +21,9 @@
     "isbot": "^4.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-slideshow-image": "^4.3.0"
+    "react-slideshow-image": "^4.3.0",
+    "react-spinners": "^0.13.8",
+    "spinners-react": "^1.0.7"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.6.0",
