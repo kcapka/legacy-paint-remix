@@ -126,7 +126,7 @@ html{
   /*White roller background*/
 
   .roller-bg{
-    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/images/roller-white.webp');
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('/images/roller-white.jpeg');
     background-position: center;
     background-size: cover;
   }
