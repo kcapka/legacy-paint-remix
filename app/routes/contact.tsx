@@ -21,21 +21,23 @@ export default function Contact() {
 
             <section className='default-px default-py'>
                 <div className='flex flex-col md:flex-row md:justify-between'>
-                    <div className='mb-16 md:mb-0'>
+                    <motion.div className='mb-16 md:mb-0'
+                    initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}} viewport={{once: true}}>
                         <h1 className='text-2xl font-bold mb-5 md:mb-10'>Schedule A Free Consultation</h1>
                         <p className='text-lg max-w-[600px] mb-5'>Contact us today and our team will quickly be able to set up a consultation. We are here to help solve any of your paint needs! Call us today or fill out the form below.</p>
                         <div className='md:w-[600px] md:h-[325px] overflow-hidden shadow-lg'>
                             <img src="images/handshake.jpeg" alt="handshake" />
                         </div>
                         
-                    </div>
-                    <div className=''>
+                    </motion.div>
+                    <motion.div className=''
+                    initial={{opacity: 0}} whileInView={{opacity: 1}} transition={{duration: 1}} viewport={{once: true}}>
                         <h1 className='text-2xl font-bold mb-5 md:mb-10'>Request A Contactless Quote</h1>
                         <p className='text-lg max-w-[600px] mb-5'>Get in touch with us to learn more about our contactless quotes & pricing. You will just need to answer a few questions on a call and send us photos to get an accurate estimate.</p>
                         <div className='md:w-[600px] md:h-[325px] overflow-hidden shadow-lg'>
                             <img src="images/meeting.jpeg" alt="virtual meeting" />
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
             </section>
 

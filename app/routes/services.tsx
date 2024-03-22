@@ -6,18 +6,19 @@ import { Link } from "@remix-run/react";
 export default function Services() {
   return (
     <div>
-      <section className="h-[102svh] services-bg flex pt-[275px] items-center flex-col text-center default-px">
-        <h1 className="text-white text-6xl md:text-8xl text-shadow mb-10">
+      <section className="h-[102svh] services-bg flex justify-center items-center flex-col text-center default-px relative">
+        <h1 className="text-white text-6xl lg:text-8xl text-shadow mb-10 z-10">
           <StaggerText>Our Services</StaggerText>
         </h1>
         <motion.p
-          className="text-xl md:text-2xl text-white md:font-thin"
+          className="text-xl md:text-2xl text-white z-10"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 1 }}
         >
           <em>Quality is not an act, it is a habit. </em>-Aristotle
         </motion.p>
+        <div className="absolute top-0 left-0 bg-[rgba(0,0,0,0.4)] w-full h-full"></div>
       </section>
 
       <section className="default-px md:py-[100px] bg-light">

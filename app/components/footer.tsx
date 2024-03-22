@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div>
             <section className="roller-bg py-[150px] default-px flex flex-col items-center">
-                <motion.h1 className="text-4xl text-center mb-10 text-white"
+                <motion.h1 className="text-2xl md:text-4xl text-center mb-10 text-white"
                 initial={{
                 opacity: 0,
                 y: 100

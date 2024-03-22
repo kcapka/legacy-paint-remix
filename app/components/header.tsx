@@ -70,7 +70,8 @@ export default function Header() {
                         <span className={`${isActive===true ? "rotate-[-45deg] translate-y-[-10px]" : ""} h-[2px] w-[30px] m-1`}></span>
                     </div>
             </nav>
-            <section className={`block md:hidden ${isActive ? "top-0" : "top-[-120%]"} fixed h-[100svh] bg-black text-white w-full text-center left-0 duration-100 shadow-md z-10 mt-20`}>
+            {/* mobile nav */}
+            <section className={`block md:hidden ${isActive ? "top-0" : "top-[-120%]"} fixed h-[100svh] bg-black text-white w-full text-center left-0 duration-100 shadow-md z-20 mt-20`}>
                     <ul className="[&_li]:pt-5 [&_li]:cursor-pointer text-xl pt-16 [&_li]:border-b [&_li]:pb-5 [&_li]:duration-200">
                         <Link to="/">
                             <li onClick={handleToggle} className="border-t hover:bg-[#888683]">Home</li>
