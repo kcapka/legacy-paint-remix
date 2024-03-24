@@ -61,9 +61,11 @@ export default function Header() {
                             <li className="link-with-underline">Contact</li>
                         </Link>
                     </ul>
-                    <Link to="/contact">
-                        <Button className="text-base">Call Us Today (602) 739.6604</Button>
-                    </Link>
+                    <div className="hidden md:block">
+                        <Link to="/contact">
+                            <Button className="text-base">Call Us Today (602) 739.6604</Button>
+                        </Link>
+                    </div>
 
                     {/* mobile menu toggle */}
                     <div className={`${isActive ? "[&_span]:bg-white" : "[&_span]:bg-black"} flex items-center flex-col justify-center md:hidden w-[32px] h-[32px] [&_span]:duration-300 cursor-pointer`} onClick={handleToggle}>
