@@ -48,7 +48,7 @@ export default function ContactForm() {
         whileInView={{opacity: 1, y: 0}}
         transition={{duration: 1}}
         viewport={{once: true}} className=''>
-            <h1 className="text-2xl md:text-4xl font-normal mb-10">Complete the estimate form below for the fastest quote possible.</h1>
+            <h2 className="text-2xl md:text-4xl font-normal mb-10">Complete the estimate form below for the fastest quote possible.</h2>
             <form ref={form} onSubmit={sendEmail} className="[&_input]:border-none [&_input]:shadow-lg [&_input]:outline-none [&_textarea]:outline-none [&_input]:p-3 [&_input]:rounded [&_label]:md:text-xl [&_label]:py-3">
                 <div className="flex mb-5 [&_input]:bg-[#F5F5F5]">
                     <div className="flex flex-col mr-5">

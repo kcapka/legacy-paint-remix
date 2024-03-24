@@ -28,9 +28,9 @@ export default function About() {
                     <img src="images/man-on-roof.jpeg" alt="Worker painting roof" className="flex-1 md:max-w-[600px] shadow-md" />
                 </FadeRight>
                 <FadeLeft>
-                    <div className="flex-1 max-w-[600px]">
+                    <div className="flex-1 max-w-[600px] flex flex-col">
                         <h2 className="text-2xl md:text-5xl mb-5 md:mb-10 font-bold">A team you can trust.</h2>
-                        <p className="text-lg md:text-2xl mb-5 md:mb-10">All of our team members are trained with specialized systems that have been time-tested by our expert leaders.</p>
+                        <p className="text-lg md:text-2xl mb-10">All of our team members are trained with specialized systems that have been time-tested by our expert leaders.</p>
                         <Link to="/services">
                             <Button>Our Services</Button>
                         </Link>
@@ -42,7 +42,7 @@ export default function About() {
                 <FadeRight>
                     <div className="flex-1 max-w-[600px]">
                         <h2 className="text-2xl md:text-5xl mb-5 md:mb-10 font-bold">With us, you’ll have peace of mind we will always use the highest quality paint.</h2>
-                        <p className="text-lg md:text-2xl mb-5 md:mb-10">Our featured paint suppliers include: Sherwin Williams, BEHR.</p>
+                        <p className="text-lg md:text-2xl mb-10">Our featured paint suppliers include: Sherwin Williams, BEHR.</p>
                         <Link to="/services">
                             <Button>Our Services</Button>
                         </Link>

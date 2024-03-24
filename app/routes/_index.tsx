@@ -41,9 +41,9 @@ export default function Index() {
             <h1 className="text-4xl md:text-6xl mb-2 md:mb-5">
               Professional home and business painting services.
             </h1>
-            <h2 className="text-2xl mb-4 md:mb-7">
+            <p className="text-2xl mb-4 md:mb-7">
               Find out why we are a top rated San Diego business.
-            </h2>
+            </p>
             <div className="flex justify-center">
               <Link to="/services">
                 <Button>Our Services</Button>
@@ -79,11 +79,11 @@ export default function Index() {
             </motion.p>
           </div>
           <div className="flex-1">
-            <h1 className="mb-5 text-2xl md:text-4xl text-center md:text-start md:mb-10">
+            <h2 className="mb-5 text-2xl md:text-4xl text-center md:text-start md:mb-10">
               <StaggerText>
                 Text or call us for a free contactless quote today.
               </StaggerText>
-            </h1>
+            </h2>
             <div className="flex justify-center md:justify-start">
               <Link to="/contact">
                 <Button>Schedule Contactless Quote</Button>
@@ -101,14 +101,14 @@ export default function Index() {
         viewport={{ once: true }}
       >
         <div>
-          <h1 className="text-4xl mb-8 md:mb-12">Our Services</h1>
-          <div className="[&_div]:md:pr-5 [&_div]:mb-16 [&_div]:md:mb-0 [&_div]:max-w-[400px] flex flex-col items-center md:items-start md:flex-row md:justify-between [&_h1]:text-xl [&_img]:mb-5 [&_h1]:mb-3 [&_img]:mx-auto [&_h1]:font-bold [&_h1]:px-2 [&_p]:px-2 [&_p]:text-base [&_p]:md:text-lg mb-0 md:mb-20">
+          <h2 className="text-4xl mb-8 md:mb-12">Our Services</h2>
+          <div className="[&_div]:md:pr-5 [&_div]:mb-16 [&_div]:md:mb-0 [&_div]:max-w-[400px] flex flex-col items-center md:items-start md:flex-row md:justify-between [&_h3]:text-xl [&_img]:mb-5 [&_h3]:mb-3 [&_img]:mx-auto [&_h3]:font-bold [&_h3]:px-2 [&_p]:px-2 [&_p]:text-base [&_p]:md:text-lg mb-0 md:mb-20">
             <motion.div
               className="flex-1 opacity-0 translate-y-2 flex flex-col"
               variants={item}
             >
               <img src="/images/hp-img1.png" alt="Plant in house" />
-              <h1>Residential Home Painting</h1>
+              <h3>Residential Home Painting</h3>
               <p>
                 Whether your home needs interior painting, exterior painting or
                 custom painting, we are here to provide our expert painting
@@ -128,7 +128,7 @@ export default function Index() {
               variants={item}
             >
               <img src="/images/hp-img2.png" alt="Asthetic chair" />
-              <h1>Cabinets & Custom Painting Solutions</h1>
+              <h3>Cabinets & Custom Painting Solutions</h3>
               <p>
                 Does your home have a project that goes beyond the specs of
                 traditional painters?<br></br>
@@ -148,7 +148,7 @@ export default function Index() {
               variants={item}
             >
               <img src="/images/hp-img3.png" alt="Plant in front of green wall" />
-              <h1>Commercial Painting</h1>
+              <h3>Commercial Painting</h3>
               <p>
                 When it comes to moving your business to a new office that needs a
                 face lift all the way to Hotel renovations we can do it all here
@@ -174,7 +174,7 @@ export default function Index() {
 
       <section className="default-px py-[150px] bg-dark text-white flex justify-center">
         <div className="flex flex-col md:flex-row justify-start md:justify-between items-center">
-          <motion.h1 className="flex-1 text-4xl md:mr-20 mb-10 md:mb-0"
+          <motion.h2 className="flex-1 text-4xl md:mr-20 mb-10 md:mb-0"
           initial={{
             opacity: 0,
             x: -100
@@ -190,7 +190,7 @@ export default function Index() {
             once: true
           }}>
             San Diego’s premier painting company.
-          </motion.h1>
+          </motion.h2>
           <motion.div className="flex-1"
           initial={{
             opacity: 0,

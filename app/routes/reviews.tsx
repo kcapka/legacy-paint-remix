@@ -26,30 +26,30 @@ export default function Reviews() {
         />
       </section>
 
-      <section className="default-py default-px text-center [&_h1]:font-bold [&_h1]:text-xl [&_h1]:mb-5">
+      <section className="default-py default-px text-center [&_h2]:font-bold [&_h2]:text-xl [&_h2]:mb-5">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-28">
           <div>
-            <h1>Jared S. in San Diego</h1>
+            <h2>Jared S. in San Diego</h2>
             <p>“I hired Stephen and his team to repaint my 3 bed condo and they really did a great job. He was especially helpful in helping me pick colors as I had no idea where to start. I would highly recommend Legacy Painting and will be sure to use them in the future.”</p>
           </div>
           <div>
-            <h1>Remy K. in Bay Park</h1>
+            <h2>Remy K. in Bay Park</h2>
             <p>“Stephen and his team have helped me with multiple painting projects. My new interior paint looks perfect and they did a fantastic job on my outdoor pergola. He was also able to provide me with the lowest quotes for quality work!”</p>
           </div>
           <div>
-            <h1>Kim B. in San Clemente</h1>
+            <h2>Kim B. in San Clemente</h2>
             <p>“After we purchased our new home, Legacy Painting was able to get us a quote to finalize the entire home interior faster than any other quote we received. They did an amazing job, and finished right on time!”</p>
           </div>
           <div>
-            <h1>Mike P. in Clairemont</h1>
+            <h2>Mike P. in Clairemont</h2>
             <p>“I manage a property management company and get a lot of requests for painting referrals from new tenants. Legacy Painting is my go to painting contractor because of how easy they are how to work with and how fast they can get the job done.”</p>
           </div>
           <div>
-            <h1>Raymond M. in North Park</h1>
+            <h2>Raymond M. in North Park</h2>
             <p>“I’m so happy with how everything turned out. Legacy paint was very professional and had outstanding communication. I would definitely use them again and recommend to friends and family.”</p>
           </div>
           <div>
-            <h1>Taylor T. in La Jolla</h1>
+            <h2>Taylor T. in La Jolla</h2>
             <p>“I’ve hired Stephen for several jobs now and him and his team have always done quality work. I just had them repaint my kitchen cabinets as we’re updating our kitchen and they did a fantastic job and at such a great price!! I will always recommend Legacy Painting Company.” </p>
           </div>
         </div>

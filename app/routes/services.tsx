@@ -35,9 +35,9 @@ export default function Services() {
             className="max-w-full md:max-w-[900px] mb-10 md:mb-0"
           />
           <div className="md:absolute top-[5%] left-[50%] bg-dark text-white p-10 md:min-h-[600px] flex flex-col justify-center">
-            <h1 className="text-4xl md:text-6xl mb-8">
+            <h2 className="text-4xl md:text-6xl mb-8">
               Exterior & Interior Residential Home Painting
-            </h1>
+            </h2>
             <p className=" text-lg md:text-xl mb-8">
               Whatever projects your home needs, we are here to provide our
               expert painting solutions.<br></br>
@@ -58,9 +58,9 @@ export default function Services() {
           viewport={{ once: true }}
         >
           <div className="md:absolute top-[25%] right-[50%] bg-dark text-white p-10 md:min-h-[600px] flex flex-col justify-center">
-            <h1 className="text-4xl md:text-6xl mb-8">
+            <h2 className="text-4xl md:text-6xl mb-8">
               Custom Projects, Kitchen Cabinets & Paint Spraying
-            </h1>
+            </h2>
             <p className="text-lg md:text-xl mb-8">
               Our team has specialists who can help complete your custom
               projects including everything from kitchen cabinetry to outdoor
