@@ -1,5 +1,6 @@
 import { Link } from "@remix-run/react";
 import {useState, useEffect} from 'react';
+import Button from "./Button";
 
 export default function Header() {
     /* for mobile */
@@ -32,14 +33,14 @@ export default function Header() {
     }, [prevScrollPos]);
 
     if (!visible && !isActive) {
-        top = 'top-[-100px]';
+        top = 'top-[-112px]';
     } else {
         top = 'top-0';
     }
 
     return (
         <>
-            <nav className={`default-px h-24 md:h-26 flex items-center justify-between ${isActive ? "bg-black" : "bg-light"} shadow-md fixed ${top} w-[100vw] z-20 duration-300`}>
+            <nav className={`default-px min-h-24 md:min-h-28 flex items-center justify-between ${isActive ? "bg-black" : "bg-light"} shadow-md fixed ${top} w-[100vw] z-20 duration-300`}>
                 <Link to="/">
                     <img src="/images/Legacy-Painting-Logo.png" alt="Legacy Painting Logo" className="cursor-pointer md:w-[150px] w-[200px]"/>     
                 </Link>
@@ -60,10 +61,11 @@ export default function Header() {
                             <li className="link-with-underline">Contact</li>
                         </Link>
                     </ul>
-                    <div className="justify-between [&_img]:mr-7 hidden md:flex">
-                        <img src="/images/x-logo.svg" alt="X Logo" className="cursor-pointer"/>
-                        <a href="https://www.linkedin.com/in/stephen-soriano-3722a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="/images/linkedin-logo.svg" alt="LinkedIn Logo" className="cursor-pointer"/></a>
-                    </div>
+                    <Link to="/contact">
+                        <Button className="text-base">Call Us Today (602) 739.6604</Button>
+                    </Link>
+
+                    {/* mobile menu toggle */}
                     <div className={`${isActive ? "[&_span]:bg-white" : "[&_span]:bg-black"} flex items-center flex-col justify-center md:hidden w-[32px] h-[32px] [&_span]:duration-300 cursor-pointer`} onClick={handleToggle}>
                         <span className={`${isActive===true ? "rotate-45 translate-y-[10px]": "" } h-[2px] w-[30px] m-1`}></span>
                         <span className={`${isActive===true ? "opacity-0 w-[0px]" : "w-[30px]"} h-[2px] m-1`}></span>
@@ -93,8 +95,9 @@ export default function Header() {
                         </Link>
                     </ul>
                     <div className="flex justify-center mt-10">
-                        <img src="/images/x-logo.svg" alt="X Logo" className="cursor-pointer mr-5"/>
-                        <a href="https://www.linkedin.com/in/stephen-soriano-3722a373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><img src="/images/linkedin-logo.svg" alt="LinkedIn Logo" className="cursor-pointer"/></a>
+                        <Link to="/contact">
+                            <Button>Call Us Today (602) 739.6604</Button>
+                        </Link>
                     </div>
             </section>
         </>
