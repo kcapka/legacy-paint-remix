@@ -1,10 +1,12 @@
 import { Link } from "@remix-run/react";
 import {useState, useEffect} from 'react';
 import Button from "./Button";
+import { useLocation } from "@remix-run/react";
 
 export default function Header() {
     /* for mobile */
     const [isActive, setIsActive] = useState(false);
+    const location = useLocation();
 
 
     function handleToggle() {
@@ -46,19 +48,19 @@ export default function Header() {
                 </Link>
                     <ul className="hidden md:flex items-center justify-between  [&_li]:lg:mr-7 [&_li]:md:mr-3 [&_li]:cursor-pointer md:text-lg">
                         <Link to="/services">
-                            <li className="link-with-underline">Our Services</li>
+                            <li className={`${location.pathname === '/services' ? 'text-button' : ''} link-with-underline`}>Our Services</li>
                         </Link>
                         <Link to="/portfolio">
-                            <li className="link-with-underline">Portfolio</li>
+                            <li className={`${location.pathname === '/portfolio' ? 'text-button' : ''} link-with-underline`}>Portfolio</li>
                         </Link>
                         <Link to="/reviews">
-                            <li className="link-with-underline">Reviews</li>
+                            <li className={`${location.pathname === '/reviews' ? 'text-button' : ''} link-with-underline`}>Reviews</li>
                         </Link>
                         <Link to="/about">
-                            <li className="link-with-underline">About</li>
+                            <li className={`${location.pathname === '/about' ? 'text-button' : ''} link-with-underline`}>About</li>
                         </Link>
                         <Link to="/contact">
-                            <li className="link-with-underline">Contact</li>
+                            <li className={`${location.pathname === '/contact' ? 'text-button' : ''} link-with-underline`}>Contact</li>
                         </Link>
                     </ul>
                     <div className="hidden md:block">
