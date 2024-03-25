@@ -1,5 +1,12 @@
 import StaggerText from "~/components/animations/StaggerText";
 import { motion } from "framer-motion";
+import type { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [
+    {title: "Legacy Painting | Reviews"},
+  ]
+}
 
 export default function Reviews() {
   return (

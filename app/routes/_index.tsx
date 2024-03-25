@@ -6,7 +6,17 @@ import HeroFadeIn from "~/components/animations/HeroFadeIn";
 import Button from "~/components/Button";
 
 export const meta: MetaFunction = () => {
-  return [{ title: "Legacy Painting" }];
+  return [
+    { title: "Legacy Painting" },
+    {
+      name: "keywords",
+      content: "Painting, San Diego, Exterior painting, Interior painting, California, Paint"
+    },
+    {
+      name: "description",
+      content: "Professional San Diego painting company."
+    }
+  ];
 };
 
 export default function Index() {

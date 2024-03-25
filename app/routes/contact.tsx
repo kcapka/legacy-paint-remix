@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion';
 import ContactForm from '~/components/ContactForm';
 import StaggerText from '~/components/animations/StaggerText';
+import type { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [
+    {title: "Legacy Painting | Contact"},
+  ]
+}
 
 export default function Contact() {
     return (

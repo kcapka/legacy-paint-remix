@@ -4,6 +4,13 @@ import StaggerText from "~/components/animations/StaggerText";
 import FadeUp from "~/components/animations/FadeUp";
 import FadeRight from "~/components/animations/FadeRight";
 import FadeLeft from "~/components/animations/FadeLeft";
+import type { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [
+    {title: "Legacy Painting | About"},
+  ]
+}
 
 export default function About() {
 

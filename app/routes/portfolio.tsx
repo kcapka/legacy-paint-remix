@@ -2,6 +2,13 @@ import { useState } from "react"
 import ImageSlider from "~/components/ImageSlider"
 import { motion } from 'framer-motion';
 import StaggerText from "~/components/animations/StaggerText";
+import type { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+    return [
+      {title: "Legacy Painting | Portfolio"},
+    ]
+  }
 
 const images = [
     {

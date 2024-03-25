@@ -2,6 +2,13 @@ import StaggerText from "~/components/animations/StaggerText";
 import { motion } from "framer-motion";
 import Button from "~/components/Button";
 import { Link } from "@remix-run/react";
+import type { MetaFunction } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [
+    {title: "Legacy Painting | Services"},
+  ]
+}
 
 export default function Services() {
   return (
